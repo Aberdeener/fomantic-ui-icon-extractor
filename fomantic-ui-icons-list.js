@@ -8,20 +8,20 @@ fetch('https://raw.githubusercontent.com/fomantic/Fomantic-UI/develop/dist/compo
         const rules = css.parse(text).stylesheet.rules;
 
         const output = {
-            "solid": {
-                "prefix": "",
-                "icon-style": "fomantic-ui-solid",
-                "icons": [],
+            'solid': {
+                'prefix': '',
+                'icon-style': 'fomantic-ui-solid',
+                'icons': [],
             },
-            "outline":  {
-                "prefix": "",
-                "icon-style": "fomantic-ui-outline",
-                "icons": [],
+            'outline':  {
+                'prefix': '',
+                'icon-style': 'fomantic-ui-outline',
+                'icons': [],
             },
-            "brands": {
-                "prefix": "",
-                "icon-style": "fomantic-ui-brands",
-                "icons": [],
+            'brands': {
+                'prefix': '',
+                'icon-style': 'fomantic-ui-brands',
+                'icons': [],
             },
         }
         rules.forEach((rule) => {
