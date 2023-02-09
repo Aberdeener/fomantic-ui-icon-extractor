@@ -2,9 +2,6 @@ import css from 'css';
 import fetch from 'node-fetch';
 import * as fs from "fs";
 
-/* -----------------------------------------------------------------------
-This script gets the latest icons by category from Fomantic UI source code
------------------------------------------------------------------------ */
 fetch('https://raw.githubusercontent.com/fomantic/Fomantic-UI/develop/dist/components/icon.css')
     .then(async function (data) {
         const text = await data.text();
@@ -13,14 +10,17 @@ fetch('https://raw.githubusercontent.com/fomantic/Fomantic-UI/develop/dist/compo
         const output = {
             "solid": {
                 "prefix": "",
+                "icon-style": "fomantic-ui-solid",
                 "icons": [],
             },
             "outline":  {
                 "prefix": "",
+                "icon-style": "fomantic-ui-outline",
                 "icons": [],
             },
             "brands": {
                 "prefix": "",
+                "icon-style": "fomantic-ui-brands",
                 "icons": [],
             },
         }
