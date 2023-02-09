@@ -1,6 +1,6 @@
 import css from 'css';
 import fetch from 'node-fetch';
-import * as fs from "fs";
+import * as fs from 'fs';
 
 fetch('https://raw.githubusercontent.com/fomantic/Fomantic-UI/develop/dist/components/icon.css')
     .then(async function (data) {
@@ -63,7 +63,9 @@ fetch('https://raw.githubusercontent.com/fomantic/Fomantic-UI/develop/dist/compo
             }
         })
 
-        fs.writeFileSync('./fomantic-ui.json', JSON.stringify(output, null, 2));
+        const result = JSON.stringify(output, null, 2);
+        fs.writeFileSync('./out/fomantic-ui.json', result);
+        fs.writeFileSync('./out/fomantic-ui.min.json', JSON.stringify(JSON.parse(result)));
     }).catch(function (error) {
         console.log(error);
     });
