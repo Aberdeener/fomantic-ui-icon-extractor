@@ -1,0 +1,24 @@
+{
+  "name": "fomantic-ui-icon-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fomantic-ui-icons-list.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aberdeener/fomantic-ui-icon-extractor.git"
+  },
+  "author": "Tadhg Boyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aberdeener/fomantic-ui-icon-extractor/issues"
+  },
+  "homepage": "https://github.com/Aberdeener/fomantic-ui-icon-extractor#readme",
+  "dependencies": {
+    "css": "^3.0.0",
+    "node-fetch": "^3.3.0"
+  }
+}
