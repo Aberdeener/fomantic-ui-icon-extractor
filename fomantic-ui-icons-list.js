@@ -26,11 +26,16 @@ fetch('https://raw.githubusercontent.com/fomantic/Fomantic-UI/develop/dist/compo
         }
         rules.forEach((rule) => {
             if (rule.type === "rule") {
-                const icon = rule.selectors[0]
+                let icon = rule.selectors[0]
                     .replace('i.icon.', '')
                     .replace('::before', '')
                     .replaceAll('.', ' ')
                     + ' icon';
+
+                // weird edge case for a single icon
+                if (icon === '\\35 00px icon') {
+                    icon = '500px icon';
+                }
 
                 // brand icons have 2 type "declaration", one with property "content" and one with "font-family" (value "brand-icons")
                 if (rule.declarations.length === 2) {
