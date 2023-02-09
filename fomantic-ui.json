@@ -1,6 +1,7 @@
 {
   "solid": {
     "prefix": "",
+    "icon-style": "fomantic-ui-solid",
     "icons": [
       "linkedin in icon",
       "zoom in icon",
@@ -1263,6 +1264,7 @@
   },
   "outline": {
     "prefix": "",
+    "icon-style": "fomantic-ui-outline",
     "icons": [
       "address book outline icon",
       "address card outline icon",
@@ -1419,8 +1421,9 @@
   },
   "brands": {
     "prefix": "",
+    "icon-style": "fomantic-ui-brands",
     "icons": [
-      "\\35 00px icon",
+      "500px icon",
       "accessible icon",
       "accusoft icon",
       "acquisitions incorporated icon",
